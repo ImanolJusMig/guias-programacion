@@ -1,14 +1,3 @@
-El documento está **muy bien**. Las respuestas son correctas, técnicamente precisas y cumplen perfectamente con los requisitos de longitud y tono impersonal.
-
-Solo he detectado **tres pequeños detalles de formato** que he corregido en la versión que te pongo abajo para que quede perfecto al subirlo:
-
-1. **Pregunta 1 (Código):** Habías puesto la etiqueta `java` en el bloque de código, pero el código es de **C**. Lo he cambiado a `c` para que los colores de la sintaxis sean los correctos.
-2. **Pregunta 6 (Final):** La frase final se cortaba un poco ("...sobre el problema"). Le he añadido un punto final.
-3. **Pregunta 11 (Listas):** Los guiones de la lista estaban pegados al texto (`-Excepciones`). En Markdown, para que se vea como una lista bonita con puntos, tiene que haber un espacio (`- Excepciones`). Lo he corregido.
-
-Aquí tienes la **versión definitiva y pulida**. Copia este bloque entero y sustituye lo que tengas en tu archivo:
-
-```markdown
 # TEMA 3. Excepciones
 
 ## 1. Empecemos un tema sobre control de errores en lenguajes de programación, con algo básico. En C, donde no existen las excepciones, pongamos un ejemplo de una raíz que toma número flotante positivo. Queremos controlar el error si la función recibe un número negativo. El usuario debe ser informado pero desde fuera de la función `raiz` ¿Cómo indicamos ese error?. Enumera dos opciones diferentes de diseñar, poniendo un ejemplo de código de cada una.
@@ -264,9 +253,4 @@ try {
     // Creamos la nueva excepción pasando la original como segundo argumento
     throw new ConfiguracionException("No se puede iniciar la app", eOriginal);
 }
-
-```
-
-```
-
 ```
