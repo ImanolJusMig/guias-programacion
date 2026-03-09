@@ -148,7 +148,10 @@ El bloque `finally` se ejecuta siempre, incluso si hay una sentencia `return` de
 ### Respuesta
 
 Las excepciones controladas (*checked*) son aquellas que el compilador obliga a gestionar (capturar o declarar). Representan fallos externos recuperables (como fichero no encontrado). Las no controladas (*unchecked*) son aquellas que el compilador no obliga a tratar; suelen derivar de la clase `RuntimeException` y representan errores de programación o bugs (como acceso a puntero nulo).
-
+----
+·No controladas(no obliga a try/catch//throws): runtimeExceptionnnnnnn, ilegalArgumentException,      ArrayIndexofBoundException
+·Controladas(si obliga a try/catch//throws): IOException, AccessDeniedException
+----
 * **Excepciones Controladas (Checked):** Se usan cuando se espera que la aplicación pueda recuperarse o deba informar al usuario obligatoriamente.
 * Conectar a una base de datos caída (`SQLException`).
 * Leer un archivo que ha sido borrado (`FileNotFoundException`).
@@ -254,3 +257,6 @@ try {
     throw new ConfiguracionException("No se puede iniciar la app", eOriginal);
 }
 ```
+Examen teorico tipo test 4 respuestas, solo una verdadera.
+cada 3 mal resta una bien. 
+hay fragmento de codigo para entender y responder el test.
